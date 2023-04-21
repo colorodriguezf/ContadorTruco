@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>Contador de truco</title>
+</head>
+<body>
+    <!-- <h1>Contador de Truco</h1> -->
+    <div class="contenedorAnotador">
+        <div id="jugadoresContainer">
+            <div id="jugador1Container" class="jugadorContainer">
+                <div class="botonesJugador">
+                    <button class="agregar">+</button>
+                    <button class="restar">-</button>
+                </div>	
+                <h2 class="h2Score nombreNosotros"></h2>
+                <div class="contador contadorNosotros"></div>
+                <div class="cuenta"></div>
+            </div>
+            <div id="jugador2Container" class="jugadorContainer">
+                <div class="botonesJugador">
+                    <button class="agregar">+</button>
+                    <button class="restar">-</button>
+                </div>	
+                <h2 class="h2Score nombreEllos"></h2>
+                <div class="contador contadorEllos"></div>
+                <div class="cuenta"></div>
+            </div>
+        </div>
+        <div class="contenedor-bt-reset">
+            <button id="reset">Reset</button>
+        </div>
+
+    </div>
+    
+	<dialog type="modal">
+        <p>¿Estás seguro de que querés resetear la partida?</p>
+		<button id="aceptar">Resetar</button>
+		<button id="volver">Volver</button>
+	</dialog>
+
+    <script src="./js/script.js" defer type="module"></script>
+</body>
+</html>
