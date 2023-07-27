@@ -21,7 +21,11 @@ const p2 = new Contador(
 );
 
 //Funciones del reset y modal
-document.querySelector("#reset").addEventListener("click", ()=> modal.showModal())
+document.querySelector("#reset").addEventListener("click", ()=> {
+    modal.showModal()
+document.querySelector(".h1modal").innerHTML="¿Estás seguro de que querés resetear la partida?";
+document.querySelector(".pmodal").innerHTML="";
+})
 document.querySelector("#volver").addEventListener("click", ()=> modal.close())
 document.querySelector("#aceptar").addEventListener("click", ()=> {
     p1.reset();

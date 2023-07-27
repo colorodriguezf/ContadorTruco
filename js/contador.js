@@ -1,4 +1,5 @@
 "use strict";
+const modal= document.querySelector("dialog");
 export class Contador {
   numero = 0;
   nombre;
@@ -26,6 +27,12 @@ export class Contador {
     }
     if (this.numero > 15){
       this.containerElement.querySelector(".contador").style.color ="white";
+    }
+    if(this.numero == 30) {
+      modal.showModal()
+      document.querySelector(".pmodal").innerHTML="GANADOR "+this.nombre;
+      document.querySelector(".h1modal").innerHTML="PARTIDA FINALZIADA";
+
     }
   }
 

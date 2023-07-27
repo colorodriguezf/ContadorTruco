@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
 	<title>Contador de truco</title>
 </head>
 <body>
@@ -12,24 +11,24 @@
     <div class="contenedorAnotador">
         <div id="jugadoresContainer">
             <div id="jugador1Container" class="jugadorContainer">
-                <div class="botonesJugador">
-                    <button class="agregar">+</button>
-                    <button class="restar">-</button>
-                </div>	
                 <a class="nombre" href="https://fontmeme.com/es/efecto-sombra/"><img class="imgnombres" src="https://fontmeme.com/permalink/230725/ed8d3977c29178c95347706f0e8e1059.png" alt="efecto-sombra"></a>
                 <h2 class="h2Score nombreNosotros"></h2>
                 <div class="contador contadorNosotros"></div>
                 <div class="cuenta"></div>
-            </div>
-            <div id="jugador2Container" class="jugadorContainer">
                 <div class="botonesJugador">
                     <button class="agregar">+</button>
                     <button class="restar">-</button>
                 </div>	
+            </div>
+            <div id="jugador2Container" class="jugadorContainer">
                 <a class="nombre" href="https://fontmeme.com/es/efecto-sombra/"><img class="imgnombres" src="https://fontmeme.com/permalink/230725/0fc5172c6d10c984a377476e4b3d1620.png" alt="efecto-sombra"></a>
                 <h2 class="h2Score nombreEllos"></h2>
                 <div class="contador contadorEllos"></div>
                 <div class="cuenta"></div>
+                <div class="botonesJugador">
+                    <button class="agregar">+</button>
+                    <button class="restar">-</button>
+                </div>	
             </div>
         </div>
         <div class="contenedor-bt-reset">
@@ -41,8 +40,9 @@
 
     </div>
     
-	<dialog type="modal">
-        <p>¿Estás seguro de que querés resetear la partida?</p>
+	<dialog type="modal" class="dialog">
+        <h4 class="h1modal"></h4>
+        <p class="pmodal"></p>
 		<button id="aceptar">Resetar</button>
 		<button id="volver">Volver</button>
 	</dialog>
