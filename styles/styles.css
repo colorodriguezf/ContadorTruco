@@ -190,9 +190,9 @@ button:active {
 }
 #reset {
 	background: none;
-	border-radius: 100%;
+	border-radius: 70%;
 	font-weight: bold;
-	background-color:#fec973; 
+	background-color:#f3cc8e; 
 	color: black;
 	background-image: linear-gradient(top, #e2e6e7 0% ,#ac7f15 100%);   
 }
